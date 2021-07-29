@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>AWS Amplify for Developer</title>
+
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="description" content="Bootstrap 4 Template For Software Startups">
+	<meta name="author" content="Xiaoying Riley at 3rd Wave Media">
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+
+	<!-- FontAwesome JS-->
+	<script defer src="assets/fontawesome/js/all.min.js"></script>
+
+	<!-- Plugins CSS -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
+	<link rel="stylesheet" href="assets/plugins/simplelightbox/simple-lightbox.min.css">
+
+	<!-- Theme CSS -->
+	<link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+
+</head>
+
+<body class="docs-page">
+	<header class="header fixed-top">
+		<div class="branding docs-branding">
+			<div class="container-fluid position-relative py-2">
+				<div class="docs-logo-wrapper">
+					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none"
+						type="button">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon me-2"
+								src="assets/images/coderdocs-logo.svg" alt="logo"><span class="logo-text">AWS<span
+									class="text-alt">Amplify Training (Bayu Satria Gemilang)</span></span></a></div>
+				</div>
+				<!--//docs-logo-wrapper-->
+			</div>
+			<!--//container-->
+		</div>
+		<!--//branding-->
+	</header>
+	<!--//header-->
+
+
+	<div class="docs-wrapper">
+		<div id="docs-sidebar" class="docs-sidebar">
+			<div class="top-search-box d-lg-none p-3">
+				<form class="search-form">
+					<input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+					<button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+				</form>
+			</div>
+			<nav id="docs-nav" class="docs-nav navbar">
+				<ul class="section-items list-unstyled nav flex-column pb-3">
+					<li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-1"><span
+								class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>Perkenalan</a>
+					</li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">Apa itu AWS Amplify</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-1-2">BAAS</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-1-3">Support Framework</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span
+								class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Features</a>
+					</li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-2-1">Datastore</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-2-2">Storage</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-2-3">Serverless API</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-2-4">Authentication</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span
+								class="theme-icon-holder me-2"><i class="fas fa-box"></i></span>Application Planning</a>
+					</li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-3-1">Arsitektur</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span
+								class="theme-icon-holder me-2"><i class="fas fa-cogs"></i></span>Practice</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-4-1">Akses AWS Amplify Console</a>
+					</li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-4-2">Create Backend App</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-4-3">Section Item 4.3</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-4-4">Section Item 4.3</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-4-5">Section Item 4.3</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-4-6">Section Item 4.3</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-4-7">Section Item 4.3</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-4-8">Section Item 4.3</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-4-9">Section Item 4.3</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-4-10">Section Item 4.3</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-4-11">Section Item 4.3</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-4-12">Section Item 4.3</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-4-13">Section Item 4.3</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-5"><span
+								class="theme-icon-holder me-2"><i class="fas fa-tools"></i></span>Utilities</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-5-1">Section Item 5.1</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-5-2">Section Item 5.2</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-5-3">Section Item 5.3</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-6"><span
+								class="theme-icon-holder me-2"><i class="fas fa-laptop-code"></i></span>Web</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-6-1">Section Item 6.1</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-6-2">Section Item 6.2</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-6-3">Section Item 6.3</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span
+								class="theme-icon-holder me-2"><i class="fas fa-tablet-alt"></i></span>Mobile</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Section Item 7.1</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-7-2">Section Item 7.2</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-7-3">Section Item 7.3</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-8"><span
+								class="theme-icon-holder me-2"><i class="fas fa-book-reader"></i></span>Resources</a>
+					</li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-8-1">Section Item 8.1</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-8-2">Section Item 8.2</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-8-3">Section Item 8.3</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-9"><span
+								class="theme-icon-holder me-2"><i class="fas fa-lightbulb"></i></span>FAQs</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-9-1">Section Item 9.1</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-9-2">Section Item 9.2</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-9-3">Section Item 9.3</a></li>
+				</ul>
+
+			</nav>
+			<!--//docs-nav-->
+		</div>
+		<!--//docs-sidebar-->
+		<div class="docs-content">
+			<div class="container">
+				<article class="docs-article" id="section-1">
+					<header class="docs-header">
+						<h1 class="docs-heading">Perkenalan <span class="docs-time">Last updated: 2021 July 25</span>
+						</h1>
+
+					</header>
+					<section class="docs-section" id="item-1-1">
+						<h2 class="section-heading">Apa itu AWS Amplify</h2>
+						<p>AWS Amplify adalah kumpulan tools & service yang digunakan untuk mengembangkan aplikasi Full
+							Stack (mobile & web) yang terintegrasi dengan layanan cloud computing dari Amazon Web
+							Service (AWS). Dengan menggunakan AWS Amplify kita bisa gunakan layanan cloud computing AWS
+							untuk membuat backend dari aplikasi, seperti database, API, storage, hosting &
+							authentication. Jadi tugas seorang full stack developer hanya membuat Frontend untuk
+							kemudian diintegrasikan dengan layanan backend dari AWS. Tanpa harus install database,
+							membuat server untuk hosting, install library untuk autentikasi dll. </p>
+
+					</section>
+					<!--//section-->
+
+					<section class="docs-section" id="item-1-2">
+						<h2 class="section-heading">BAAS (Backend As a Services)</h2>
+						<p>BaaS adalah model layanan cloud dimana Backend dari aplikasi dikelola oleh pihak lain. Ketika
+							kita menggunakan layanan BaaS maka kita fokus pada frontend dan bagaimana menghubungkan
+							frontend yang dibuat dengan layanan BaaS. Pada umumnya layanan BaaS meliputi Database
+							Management, API, Cloud Storage, Authentication System, Hosting, Real Time Monitoring, Push
+							Notification dll. Apakah AWS Amplify termasuk BaaS? Bisa dikatakan iya, karena AWS Amplify
+							menyediakan semua yang kita butuhkan untuk membuat sebuah backend memanfaatkan teknologi
+							cloud. Tetapi kita juga bisa memilih untuk tidak menggunakan semua layanan yang ada pada AWS
+							Amplify, AWS Amplify menyediakan open source framework bernama Amplify Framework untuk
+							mengintegrasikan frontend aplikasi dengan satu atau lebih layanan cloud AWS.</p>
+					</section>
+					<!--//section-->
+
+					<section class="docs-section" id="item-1-3">
+						<h2 class="section-heading">Support Framework</h2>
+						<p>Saat ini AWS Amplify mendukung banyak web framework seperti React, Angular, Vue, Next.js.
+							Sedangkan untuk mobile platform AWS Amplify mendukung Android, iOS, React Native, Ionic,
+							Flutter.</p>
+
+						<img src="https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png" height="100px"
+							width="100px" />
+						<img src="https://angular.io/assets/images/logos/angularjs/AngularJS-Shield.svg" height="100px"
+							width="100px" />
+						<img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Vue.png" height="100px"
+							width="100px" />
+						<img src="https://seeklogo.com/images/N/next-js-logo-8FCFF51DD2-seeklogo.com.png" height="100px"
+							width="100px" />
+						<img src="https://lh3.googleusercontent.com/proxy/xxoeA20AERVvrU_ugC7JoOOWJi9-ruoLZrXsDn6dOFuv7jzQ-nXTydYatHqEI-Bq-pIVdAeYkzVnWum62JM6954SUvTL4YPn3uhwEqv0uIoqg2ZvQboFIcMQNYURClc"
+							height="100px" width="100px" />
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/1724px-Apple_logo_black.svg.png"
+							height="100px" width="100px" />
+						<img src="https://res.cloudinary.com/practicaldev/image/fetch/s--Brmz6H1m--/c_fill,f_auto,fl_progressive,h_320,q_auto,w_320/https://dev-to-uploads.s3.amazonaws.com/uploads/organization/profile_image/845/0adbf602-5848-43dd-a883-a558ceba10f4.png"
+							height="100px" width="100px" />
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3kL914lioYbqEbqIY7y-7d2PhKDDE3dDy0nak7UkzKDoyxnzzz1omR5bhze63pxNLqQM&usqp=CAU"
+							height="100px" width="100px" />
+
+					</section>
+					<!--//section-->
+
+				</article>
+
+				<article class="docs-article" id="section-2">
+					<header class="docs-header">
+						<h1 class="docs-heading">Features</h1>
+						<section class="docs-intro">
+							<li>Datastore</li>
+							<li>Storage</li>
+							<li>Serverless API</li>
+							<li>Authentication</li>
+						</section>
+						<!--//docs-intro-->
+					</header>
+					<section class="docs-section" id="item-2-1">
+						<h2 class="section-heading">Datastore</h2>
+						<p>Storage engine dengan kemampuan sinkronisasi offline, layanan yang digunakan adalah AWS
+							AppSync & Amazon DynamoDB.  Dengan datastore, data masih bisa diakses meskipun dalam kondisi
+							offline, sinkronisasi data antara device atau client dengan server akan dilakukan di
+							background.</p>
+						<img
+							src="https://d2908q01vomqb2.cloudfront.net/0a57cb53ba59c46fc4b692527a38a87c78d84028/2020/05/04/Offline1.png" />
+
+					</section>
+					<!--//section-->
+
+					<section class="docs-section" id="item-2-2">
+						<h2 class="section-heading">Storage</h2>
+						<p>Data aplikasi berupa object seperti file gambar, video dapat disimpan di cloud storage S3.
+						</p>
+						<img src="https://miro.medium.com/max/640/1*aNSe9ZERfX5-Dl0wAVBOOg.png" />
+					</section>
+					<!--//section-->
+
+					<section class="docs-section" id="item-2-3">
+						<h2 class="section-heading">Serverless API</h2>
+						<p>Kita bisa memilih antara menggunakan REST API atau GraphQL.</p>
+						<img src="https://cdn.netlify.com/f77989acee58aa60fe4f29f0cf0e751e3996d9c0/0f5ec/img/blog/graphql2.png"
+							width="50%" height="50%" />
+
+					</section>
+					<!--//section-->
+					<section class="docs-section" id="item-2-4">
+						<h2 class="section-heading">Authentication</h2>
+						<p>Sistem autentikasi yang terintegrasi dengan layanan Amazon Cognito.</p>
+						<img src="https://miro.medium.com/max/560/0*HtIlASe94hiQS2oG" width="50%" height="50%" />
+					</section>
+					<!--//section-->
+				</article>
+				<!--//docs-article-->
+
+
+				<article class="docs-article" id="section-3">
+					<header class="docs-header">
+						<h1 class="docs-heading">Application Planning</h1>
+						<section class="docs-intro">
+							<p>Pada bagian ini kita akan membuat sebuah aplikasi untuk membuat postingan singkat secara
+								acak yang kita sebut dengan Random Post Generator. Dengan React sebagai frontend dan AWS
+								Amplify sebagai backend.</p>
+						</section>
+						<!--//docs-intro-->
+					</header>
+					<section class="docs-section" id="item-3-1">
+						<h2 class="section-heading">Arsitektur</h2>
+						<p>Arsitektur Aplikasi yang akan dibangun.</p>
+						<img src="https://devsaurus.com/static/1123975c6f04e587d9f98c9f31123f8c/5a190/aws-amplify.png"
+							width="50%" height="50%" />
+
+					</section>
+					<!--//section-->
+				</article>
+				<!--//docs-article-->
+
+				<article class="docs-article" id="section-4">
+					<header class="docs-header">
+						<h1 class="docs-heading">Practice</h1>
+						<section class="docs-intro">
+							<p>Tools apa saja yang akan digunakan untuk praktek pembuatan Aplikasi dengan AWS Amplify?
+							</p>
+							<li>Account Github, Gitlab atau Bitbucket</li>
+							<li>Visual Studio Code</li>
+						</section>
+						<!--//docs-intro-->
+					</header>
+					<section class="docs-section" id="item-4-1">
+						<h2 class="section-heading">Akses AWS Amplify Console</h2>
+						<p>Langkah pertama adalah login ke AWS Management Console kemudian pada menu Services pilih atau
+							cari AWS Amplify. (Optional) Pilih region AWS terdekat.</p>
+						<p>Tampilan AWS Amplify Console:</p>
+						<img src="assets/images/aws/amplify-console.png" width="90%" height="90%" />
+					</section>
+					<!--//section-->
+
+					<section class="docs-section" id="item-4-2">
+						<h2 class="section-heading">Create Backend App</h2>
+						<p>Buat sebuah aplikasi baru <b>*New app -> Create backend app.</b></p>
+						<img src="assets/images/aws/create-amplify-backend.png" width="50%" height="50%" />
+						<p>Kemudian beri nama aplikasi <b>random-post-generator</b>.</p>
+						<img src="https://devsaurus.com/static/dd4f2535b0e41878ce1121a44cd221b7/5a190/name-new-backend-app.png"
+							width="50%" height="50%" />
+						<p>Proses deployment memakan waktu beberapa menit.</p>
+						<p>Setelah proses deployment backend selesai, selanjutnya kita akan melakukan 3 hal:</p>
+						<li>Data Model</li>
+						<li>Menambah Sistem autentikasi</li>
+						<li>Deploy Frontend (Hosting)</li>
+					</section>
+					<!--//section-->
+
+					<section class="docs-section" id="item-4-3">
+						<h2 class="section-heading">Membuat Data Model</h2>
+						<p>Buka Admin UI kemudian pilih menu <b>DataSource</b>.</p>
+						<img src="https://devsaurus.com/static/d08fde4e8c0159e21dd2d3669ca1ecd8/5a190/admin-ui-datastore-1.png"
+							width="50%" height="50%" />
+						<img src="https://devsaurus.com/static/93faf0f6b1d1a17db1775829dd80fb1c/5a190/admin-ui-datastore-2.png"
+							width="50%" height="50%" />
+						<p>
+							Dari menu drop down pilih Add Model.
+						</p>
+						<p>
+							Model data dari aplikasi kita buat sangat sederhana, terdiri dari satu model bernama Post
+							dengan 4 field, yaitu id, title, content & author.
+						</p>
+						<img src="https://devsaurus.com/static/c0773751f9b186040d2fef2ccb8d8be3/5a190/admin-ui-data-modeling.png"
+							width="50%" height="50%" />
+						<p>Kemudian klik Save and Deploy.</p>
+						<p>Database yang digunakan adalah jenis NoSQL Database yaitu DynamoDB. </p>
+						<p>Alur data dari front end ke database kurang lebih seperti ini:</p>
+						<img src="https://d2908q01vomqb2.cloudfront.net/0a57cb53ba59c46fc4b692527a38a87c78d84028/2020/05/04/Offline1.png"
+							width="50%" height="50%" />
+					</section>
+					<!--//section-->
+					<section class="docs-section" id="item-4-4">
+						<h2 class="section-heading">Section Item 4.3</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis
+							leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis
+							felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio
+							in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec
+							arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section>
+					<!--//section-->
+					<section class="docs-section" id="item-4-5">
+						<h2 class="section-heading">Section Item 4.3</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis
+							leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis
+							felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio
+							in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec
+							arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section>
+					<!--//section-->
+					<section class="docs-section" id="item-4-6">
+						<h2 class="section-heading">Section Item 4.3</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis
+							leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis
+							felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio
+							in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec
+							arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section>
+					<!--//section-->
+				</article>
+				<!--//docs-article-->
+
+				<article class="docs-article" id="section-5">
+					<header class="docs-header">
+						<h1 class="docs-heading">Utilities</h1>
+						<section class="docs-intro">
+							<p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+								finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit.
+								Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam
+								lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
+						</section>
+						<!--//docs-intro-->
+					</header>
+					<section class="docs-section" id="item-5-1">
+						<h2 class="section-heading">Section Item 5.1</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis
+							leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis
+							felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio
+							in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec
+							arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section>
+					<!--//section-->
+
+					<section class="docs-section" id="item-5-2">
+						<h2 class="section-heading">Section Item 5.2</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis
+							leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis
+							felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio
+							in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec
+							arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section>
+					<!--//section-->
+
+					<section class="docs-section" id="item-5-3">
+						<h2 class="section-heading">Section Item 5.3</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis
+							leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis
+							felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio
+							in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec
+							arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section>
+					<!--//section-->
+				</article>
+				<!--//docs-article-->
+
+
+				<article class="docs-article" id="section-6">
+					<header class="docs-header">
+						<h1 class="docs-heading">Web</h1>
+						<section class="docs-intro">
+							<p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+								finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit.
+								Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam
+								lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
+						</section>
+						<!--//docs-intro-->
+					</header>
+					<section class="docs-section" id="item-6-1">
+						<h2 class="section-heading">Section Item 6.1</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis
+							leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis
+							felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio
+							in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec
+							arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section>
+					<!--//section-->
+
+					<section class="docs-section" id="item-6-2">
+						<h2 class="section-heading">Section Item 6.2</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis
+							leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis
+							felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio
+							in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec
+							arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section>
+					<!--//section-->
+
+					<section class="docs-section" id="item-6-3">
+						<h2 class="section-heading">Section Item 6.3</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis
+							leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis
+							felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio
+							in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec
+							arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section>
+					<!--//section-->
+				</article>
+				<!--//docs-article-->
+
+
+				<article class="docs-article" id="section-7">
+					<header class="docs-header">
+						<h1 class="docs-heading">Mobile</h1>
+						<section class="docs-intro">
+							<p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+								finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit.
+								Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam
+								lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
+						</section>
+						<!--//docs-intro-->
+					</header>
+					<section class="docs-section" id="item-7-1">
+						<h2 class="section-heading">Section Item 7.1</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis
+							leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis
+							felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio
+							in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec
+							arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section>
+					<!--//section-->
+
+					<section class="docs-section" id="item-7-2">
+						<h2 class="section-heading">Section Item 7.2</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis
+							leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis
+							felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio
+							in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec
+							arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section>
+					<!--//section-->
+
+					<section class="docs-section" id="item-7-3">
+						<h2 class="section-heading">Section Item 7.3</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis
+							leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis
+							felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio
+							in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec
+							arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section>
+					<!--//section-->
+				</article>
+				<!--//docs-article-->
+
+
+				<article class="docs-article" id="section-8">
+					<header class="docs-header">
+						<h1 class="docs-heading">Resources</h1>
+						<section class="docs-intro">
+							<p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+								finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit.
+								Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam
+								lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
+						</section>
+						<!--//docs-intro-->
+					</header>
+					<section class="docs-section" id="item-8-1">
+						<h2 class="section-heading">Section Item 8.1</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis
+							leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis
+							felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio
+							in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec
+							arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section>
+					<!--//section-->
+
+					<section class="docs-section" id="item-8-2">
+						<h2 class="section-heading">Section Item 8.2</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis
+							leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis
+							felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio
+							in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec
+							arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section>
+					<!--//section-->
+
+					<section class="docs-section" id="item-8-3">
+						<h2 class="section-heading">Section Item 8.3</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis
+							leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis
+							felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio
+							in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec
+							arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section>
+					<!--//section-->
+				</article>
+				<!--//docs-article-->
+
+
+				<article class="docs-article" id="section-9">
+					<header class="docs-header">
+						<h1 class="docs-heading">FAQs</h1>
+						<section class="docs-intro">
+							<p>Section intro goes here. You can list all your FAQs using the format below.</p>
+						</section>
+						<!--//docs-intro-->
+					</header>
+					<section class="docs-section" id="item-9-1">
+						<h2 class="section-heading">Section Item 9.1 <small>(FAQ Category One)</small></h2>
+						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>What's sit amet quam eget lacinia?
+						</h5>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+							Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+							ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+							consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+							arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu
+							pede mollis pretium.</p>
+						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>How to ipsum dolor sit amet quam
+							tortor?</h5>
+						<p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus
+							nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus
+							quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
+						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Can I bibendum sodales?</h5>
+						<p>Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy
+							id, metus. Nullam accumsan lorem in dui. </p>
+						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Where arcu sed urna gravida?</h5>
+						<p>Aenean et sodales nisi, vel efficitur sapien. Quisque molestie diam libero, et elementum diam
+							mollis ac. In dignissim aliquam est eget ullamcorper. Sed id sodales tortor, eu finibus leo.
+							Vivamus dapibus sollicitudin justo vel fermentum. Curabitur nec arcu sed urna gravida
+							lobortis. Donec lectus est, imperdiet eu viverra viverra, ultricies nec urna. </p>
+					</section>
+					<!--//section-->
+
+					<section class="docs-section" id="item-9-2">
+						<h2 class="section-heading">Section Item 9.2 <small>(FAQ Category Two)</small></h2>
+						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>What's sit amet quam eget lacinia?
+						</h5>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+							Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+							ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+							consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+							arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu
+							pede mollis pretium.</p>
+						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>How to ipsum dolor sit amet quam
+							tortor?</h5>
+						<p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus
+							nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus
+							quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
+						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Can I bibendum sodales?</h5>
+						<p>Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy
+							id, metus. Nullam accumsan lorem in dui. </p>
+						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Where arcu sed urna gravida?</h5>
+						<p>Aenean et sodales nisi, vel efficitur sapien. Quisque molestie diam libero, et elementum diam
+							mollis ac. In dignissim aliquam est eget ullamcorper. Sed id sodales tortor, eu finibus leo.
+							Vivamus dapibus sollicitudin justo vel fermentum. Curabitur nec arcu sed urna gravida
+							lobortis. Donec lectus est, imperdiet eu viverra viverra, ultricies nec urna. </p>
+					</section>
+					<!--//section-->
+
+					<section class="docs-section" id="item-9-3">
+						<h2 class="section-heading">Section Item 9.3 <small>(FAQ Category Three)</small></h2>
+						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>How to dapibus sollicitudin justo
+							vel fermentum?</h5>
+						<p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus
+							nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus
+							quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
+						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>How long bibendum sodales?</h5>
+						<p>Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy
+							id, metus. Nullam accumsan lorem in dui. </p>
+						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Where dapibus sollicitudin?</h5>
+						<p>Aenean et sodales nisi, vel efficitur sapien. Quisque molestie diam libero, et elementum diam
+							mollis ac. In dignissim aliquam est eget ullamcorper. Sed id sodales tortor, eu finibus leo.
+							Vivamus dapibus sollicitudin justo vel fermentum. Curabitur nec arcu sed urna gravida
+							lobortis. Donec lectus est, imperdiet eu viverra viverra, ultricies nec urna. </p>
+					</section>
+					<!--//section-->
+				</article>
+				<!--//docs-article-->
+
+				<footer class="footer">
+					<div class="container text-center py-5">
+						<small class="copyright">Template Copyright &copy; <a href="https://themes.3rdwavemedia.com/"
+								target="_blank">3rd Wave Media</a></small>
+						<ul class="social-list list-unstyled pt-4 mb-0">
+							<li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li>
+							<li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+							<li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
+							<li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>
+							<li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f fa-fw"></i></a></li>
+							<li class="list-inline-item"><a href="#"><i class="fab fa-instagram fa-fw"></i></a></li>
+						</ul>
+						<!--//social-list-->
+					</div>
+				</footer>
+			</div>
+		</div>
+	</div>
+	<!--//docs-wrapper-->
+
+
+	<!-- Javascript -->
+	<script src="assets/plugins/popper.min.js"></script>
+	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+
+	<!-- Page Specific JS -->
+	<script src="assets/plugins/smoothscroll.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+	<script src="assets/js/highlight-custom.js"></script>
+	<script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>
+	<script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
+	<script src="assets/js/docs.js"></script>
+
+</body>
+
+</html>
